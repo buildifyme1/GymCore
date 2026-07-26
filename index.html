@@ -304,6 +304,17 @@ section{position:relative;}
 /* ================= PRICING ================= */
 .pricing{padding:120px 0;background:linear-gradient(180deg,var(--bg),#EEF3FF);}
 .pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:center;}
+.pricing-grid-5{grid-template-columns:repeat(5,1fr);gap:18px;}
+.pricing-grid-5 .price-card{padding:28px 20px;}
+.pricing-grid-5 .price-amount{font-size:30px;}
+@media(max-width:1100px){
+  .pricing-grid-5{grid-template-columns:repeat(3,1fr);}
+  .pricing-grid-5 .price-card.featured{grid-column:1 / -1;transform:none;}
+  .pricing-grid-5 .price-card.featured:hover{transform:translateY(-6px);}
+}
+@media(max-width:640px){
+  .pricing-grid-5{grid-template-columns:1fr;max-width:420px;margin:0 auto;}
+}
 .price-card{
   background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:38px 30px;
   transition:transform .4s var(--ease), box-shadow .4s var(--ease);position:relative;
@@ -447,7 +458,7 @@ footer{padding:90px 0 30px;}
     </nav>
     <div class="nav-actions">
       <a href="#" class="link-btn btn-ghost" style="border:none;background:none;padding:11px 14px;">تسجيل الدخول</a>
-      <a href="#pricing" class="btn btn-primary rip">ابدأ مجانًا</a>
+      <a href="https://wa.me/201037623919" target="_blank" class="btn btn-primary rip">ابدأ الآن</a>
       <button class="burger" id="burgerBtn"><i class="fa-solid fa-bars"></i></button>
     </div>
   </div>
@@ -464,7 +475,7 @@ footer{padding:90px 0 30px;}
   <a href="#pricing">الأسعار</a>
   <a href="#faq">الأسئلة</a>
   <a href="#contact">تواصل معنا</a>
-  <a href="#pricing" class="btn btn-primary">ابدأ مجانًا</a>
+  <a href="https://wa.me/201037623919" target="_blank" class="btn btn-primary">ابدأ الآن</a>
 </div>
 
 <!-- ============ HERO ============ -->
@@ -480,7 +491,7 @@ footer{padding:90px 0 30px;}
       <h1>سيطر على إدارة <span class="grad">جيمك بالكامل</span> من مكان واحد</h1>
       <p>GymCore هو نظام سحابي متكامل لإدارة الجيمات يساعدك على إدارة الأعضاء، الاشتراكات، الحضور، التقارير، الإيرادات والمصروفات بكل سهولة.</p>
       <div class="hero-actions">
-        <a href="#pricing" class="btn btn-primary rip">ابدأ مجانًا</a>
+        <a href="https://wa.me/201037623919" target="_blank" class="btn btn-primary rip">ابدأ الآن</a>
         <a href="#features" class="btn btn-ghost rip">شاهد المميزات</a>
       </div>
       <div class="hero-trust">
@@ -756,24 +767,36 @@ footer{padding:90px 0 30px;}
       <h2>خطة تناسب حجم جيمك</h2>
       <p>ابدأ صغير ووسّع خطتك مع نمو جيمك، من غير أي التزامات معقدة.</p>
     </div>
-    <div class="pricing-grid">
+    <div class="pricing-grid pricing-grid-5">
       <div class="price-card reveal">
-        <h3>Starter</h3>
+        <h3>شهري</h3>
         <div class="desc">مثالية للجيمات الصغيرة والناشئة.</div>
-        <div class="price-amount">299 <span>جنيه / شهريًا</span></div>
+        <div class="price-amount">999 <span>جنيه / شهريًا</span></div>
         <ul>
           <li><i class="fa-solid fa-circle-check"></i> حتى 200 عضو</li>
           <li><i class="fa-solid fa-circle-check"></i> حضور بالباركود</li>
           <li><i class="fa-solid fa-circle-check"></i> تقارير أساسية</li>
           <li><i class="fa-solid fa-circle-check"></i> دعم عبر البريد</li>
         </ul>
-        <a href="#contact" class="btn btn-ghost rip">ابدأ الآن</a>
+        <a href="https://wa.me/201037623919" target="_blank" class="btn btn-ghost rip">ابدأ الآن</a>
+      </div>
+      <div class="price-card reveal">
+        <h3>3 شهور</h3>
+        <div class="desc">وفّر أكتر مع اشتراك ربع سنوي.</div>
+        <div class="price-amount">2499 <span>جنيه / 3 شهور</span></div>
+        <ul>
+          <li><i class="fa-solid fa-circle-check"></i> أعضاء غير محدودين</li>
+          <li><i class="fa-solid fa-circle-check"></i> حضور بالباركود</li>
+          <li><i class="fa-solid fa-circle-check"></i> تقارير مالية</li>
+          <li><i class="fa-solid fa-circle-check"></i> دعم فني</li>
+        </ul>
+        <a href="https://wa.me/201037623919" target="_blank" class="btn btn-ghost rip">ابدأ الآن</a>
       </div>
       <div class="price-card featured reveal">
         <div class="price-badge">الأكثر طلبًا</div>
-        <h3>Professional</h3>
+        <h3>6 شهور</h3>
         <div class="desc" style="opacity:.85;">للجيمات المتوسطة والمتنامية.</div>
-        <div class="price-amount">499 <span style="opacity:.85;">جنيه / شهريًا</span></div>
+        <div class="price-amount">5499 <span style="opacity:.85;">جنيه / 6 شهور</span></div>
         <ul>
           <li><i class="fa-solid fa-circle-check"></i> أعضاء غير محدودين</li>
           <li><i class="fa-solid fa-circle-check"></i> رسائل واتساب تلقائية</li>
@@ -781,19 +804,32 @@ footer{padding:90px 0 30px;}
           <li><i class="fa-solid fa-circle-check"></i> نسخ احتياطي يومي</li>
           <li><i class="fa-solid fa-circle-check"></i> دعم فني على مدار الساعة</li>
         </ul>
-        <a href="#contact" class="btn btn-white rip">ابدأ الآن</a>
+        <a href="https://wa.me/201037623919" target="_blank" class="btn btn-white rip">ابدأ الآن</a>
       </div>
       <div class="price-card reveal">
-        <h3>Enterprise</h3>
-        <div class="desc">حلول مخصصة لسلاسل الجيمات.</div>
-        <div class="price-amount" style="font-size:26px;">تواصل معنا</div>
+        <h3>سنوي</h3>
+        <div class="desc">أفضل قيمة لسنة كاملة من الإدارة.</div>
+        <div class="price-amount">9999 <span>جنيه / سنويًا</span></div>
+        <ul>
+          <li><i class="fa-solid fa-circle-check"></i> أعضاء غير محدودين</li>
+          <li><i class="fa-solid fa-circle-check"></i> رسائل واتساب تلقائية</li>
+          <li><i class="fa-solid fa-circle-check"></i> تقارير مالية متقدمة</li>
+          <li><i class="fa-solid fa-circle-check"></i> نسخ احتياطي يومي</li>
+          <li><i class="fa-solid fa-circle-check"></i> دعم فني على مدار الساعة</li>
+        </ul>
+        <a href="https://wa.me/201037623919" target="_blank" class="btn btn-ghost rip">ابدأ الآن</a>
+      </div>
+      <div class="price-card reveal">
+        <h3>شراء كامل</h3>
+        <div class="desc">امتلك النظام بالكامل بدفعة واحدة.</div>
+        <div class="price-amount">24999 <span>جنيه / مرة واحدة</span></div>
         <ul>
           <li><i class="fa-solid fa-circle-check"></i> فروع متعددة</li>
           <li><i class="fa-solid fa-circle-check"></i> صلاحيات مخصصة للفريق</li>
           <li><i class="fa-solid fa-circle-check"></i> تكامل مع أنظمة خارجية</li>
           <li><i class="fa-solid fa-circle-check"></i> مدير حساب مخصص</li>
         </ul>
-        <a href="#contact" class="btn btn-ghost rip">تواصل مع المبيعات</a>
+        <a href="https://wa.me/201037623919" target="_blank" class="btn btn-ghost rip">تواصل مع المبيعات</a>
       </div>
     </div>
   </div>
@@ -869,7 +905,7 @@ footer{padding:90px 0 30px;}
     <div class="cta-blob cb1"></div>
     <div class="cta-blob cb2"></div>
     <h2>ابدأ إدارة جيمك اليوم</h2>
-    <a href="#pricing" class="btn btn-white rip" style="padding:18px 40px;">ابدأ مجانًا</a>
+    <a href="https://wa.me/201037623919" target="_blank" class="btn btn-white rip" style="padding:18px 40px;">ابدأ الآن</a>
   </div>
 </section>
 
