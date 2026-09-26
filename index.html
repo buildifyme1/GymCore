@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GymCore - نظام إدارة الجيم</title>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="container navbar-container">
+
+            <a href="#" class="logo">
+                <span class="logo-icon">G</span>
+                <span>GymCore</span>
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="#features">المميزات</a>
+
+                <a href="#how-it-works">كيف يعمل</a>
+
+                <a href="#pricing">الأسعار</a>
+
+                <a href="#contact">تواصل معنا</a>
+
+            </nav>
+
+            <a href="#pricing" class="nav-button">
+                ابدأ الآن
+            </a>
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                aria-label="فتح القائمة"
+            >
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         MOBILE MENU
+    ========================== -->
+
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <div class="mobile-menu-header">
+
+            <a href="#" class="logo">
+                <span class="logo-icon">G</span>
+                <span>GymCore</span>
+            </a>
+
+            <button
+                class="mobile-menu-close"
+                id="mobileMenuClose"
+                aria-label="إغلاق القائمة"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+        <nav class="mobile-nav-links">
+
+            <a href="#features">
+                <i class="fa-solid fa-star"></i>
+                المميزات
+            </a>
+
+            <a href="#how-it-works">
+                <i class="fa-solid fa-gears"></i>
+                كيف يعمل
+            </a>
+
+            <a href="#pricing">
+                <i class="fa-solid fa-tag"></i>
+                الأسعار
+            </a>
+
+            <a href="#contact">
+                <i class="fa-solid fa-envelope"></i>
+                تواصل معنا
+            </a>
+
+        </nav>
+
+        <a href="#pricing" class="mobile-nav-button">
+            ابدأ الآن
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+
+    </div>
+
+
+    <main>
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section class="hero">
+
+            <div class="hero-background"></div>
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        نظام إدارة الجيم الذكي
+                    </div>
+
+                    <h1>
+                        إدارة جيمك
+                        <span>أصبحت أسهل</span>
+                    </h1>
+
+                    <p>
+                        GymCore هو نظام متكامل يساعدك على إدارة الأعضاء
+                        والاشتراكات والحضور والمدفوعات والتقارير من مكان واحد.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#pricing" class="primary-button">
+                            ابدأ الآن
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </a>
+
+                        <a href="#features" class="secondary-button">
+                            اكتشف المميزات
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="hero-stats">
+
+                        <div class="stat">
+                            <strong>+500</strong>
+                            <span>جيم</span>
+                        </div>
+
+                        <div class="stat">
+                            <strong>+50K</strong>
+                            <span>عضو</span>
+                        </div>
+
+                        <div class="stat">
+                            <strong>+1M</strong>
+                            <span>تسجيل حضور</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HERO DASHBOARD -->
+
+                <div class="hero-dashboard">
+
+                    <div class="dashboard">
+
+                        <div class="dashboard-header">
+
+                            <div>
+                                <strong>لوحة التحكم</strong>
+                                <span>نظرة عامة على الجيم</span>
+                            </div>
+
+                            <div class="dashboard-avatar">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+
+                        </div>
+
+
+                        <div class="dashboard-stats">
+
+                            <div class="dashboard-stat">
+
+                                <div class="dashboard-stat-icon blue">
+                                    <i class="fa-solid fa-users"></i>
+                                </div>
+
+                                <div>
+                                    <span>إجمالي الأعضاء</span>
+                                    <strong>1,248</strong>
+                                </div>
+
+                            </div>
+
+
+                            <div class="dashboard-stat">
+
+                                <div class="dashboard-stat-icon green">
+                                    <i class="fa-solid fa-user-check"></i>
+                                </div>
+
+                                <div>
+                                    <span>حضور اليوم</span>
+                                    <strong>386</strong>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="dashboard-chart">
+
+                            <div class="chart-header">
+
+                                <div>
+                                    <strong>الحضور هذا الأسبوع</strong>
+                                    <span>آخر 7 أيام</span>
+                                </div>
+
+                                <i class="fa-solid fa-chart-line"></i>
+
+                            </div>
+
+                            <div class="chart">
+
+                                <div class="chart-line"></div>
+
+                                <div class="chart-bars">
+
+                                    <span style="height: 40%"></span>
+                                    <span style="height: 60%"></span>
+                                    <span style="height: 48%"></span>
+                                    <span style="height: 80%"></span>
+                                    <span style="height: 65%"></span>
+                                    <span style="height: 90%"></span>
+                                    <span style="height: 72%"></span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FEATURES
+        ========================== -->
+
+        <section class="features" id="features">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="section-badge">
+                        المميزات
+                    </span>
+
+                    <h2>
+                        كل أدوات جيمك
+                        <span>في مكان واحد</span>
+                    </h2>
+
+                    <p>
+                        كل ما تحتاجه لإدارة وتشغيل الجيم الخاص بك
+                        بطريقة أسهل وأسرع وأكثر احترافية.
+                    </p>
+
+                </div>
+
+
+                <div class="features-grid">
+
+                    <!-- Feature 1 -->
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+
+                        <h3>إدارة الأعضاء</h3>
+
+                        <p>
+                            إدارة بيانات الأعضاء والملفات الشخصية
+                            والاشتراكات بسهولة من لوحة واحدة.
+                        </p>
+
+                        <a href="#contact">
+                            اكتشف المزيد
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </a>
+
+                    </div>
+
+
+                    <!-- Feature 2 -->
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-id-card"></i>
+                        </div>
+
+                        <h3>الاشتراكات والباقات</h3>
+
+                        <p>
+                            إنشاء وإدارة الباقات ومتابعة تواريخ
+                            بداية وانتهاء الاشتراكات.
+                        </p>
+
+                        <a href="#contact">
+                            اكتشف المزيد
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </a>
+
+                    </div>
+
+
+                    <!-- Feature 3 -->
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-calendar-check"></i>
+                        </div>
+
+                        <h3>تسجيل الحضور</h3>
+
+                        <p>
+                            تسجيل حضور وانصراف الأعضاء ومتابعة
+                            نشاط الجيم بشكل لحظي.
+                        </p>
+
+                        <a href="#contact">
+                            اكتشف المزيد
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </a>
+
+                    </div>
+
+
+                    <!-- Feature 4 -->
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-credit-card"></i>
+                        </div>
+
+                        <h3>المدفوعات</h3>
+
+                        <p>
+                            متابعة المدفوعات والفواتير والمبالغ
+                            المستحقة بطريقة منظمة.
+                        </p>
+
+                        <a href="#contact">
+                            اكتشف المزيد
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </a>
+
+                    </div>
+
+
+                    <!-- Feature 5 -->
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+
+                        <h3>التقارير والإحصائيات</h3>
+
+                        <p>
+                            احصل على تقارير واضحة تساعدك على فهم
+                            أداء الجيم واتخاذ قرارات أفضل.
+                        </p>
+
+                        <a href="#contact">
+                            اكتشف المزيد
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </a>
+
+                    </div>
+
+
+                    <!-- Feature 6 -->
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-bell"></i>
+                        </div>
+
+                        <h3>التنبيهات</h3>
+
+                        <p>
+                            تنبيهات للاشتراكات المنتهية والقريبة
+                            ومتابعة أهم الأحداث داخل الجيم.
+                        </p>
+
+                        <a href="#contact">
+                            اكتشف المزيد
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             DASHBOARD SHOWCASE
+        ========================== -->
+
+        <section class="showcase" id="how-it-works">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="section-badge">
+                        لوحة التحكم
+                    </span>
+
+                    <h2>
+                        تحكم كامل في جيمك
+                        <span>من مكان واحد</span>
+                    </h2>
+
+                    <p>
+                        لوحة تحكم بسيطة وسريعة تعرض لك أهم البيانات
+                        التي تحتاجها لمتابعة الجيم يومياً.
+                    </p>
+
+                </div>
+
+
+                <div class="showcase-dashboard">
+
+                    <!-- Sidebar -->
+
+                    <aside class="dashboard-sidebar">
+
+                        <div class="sidebar-logo">
+                            <span>G</span>
+                            GymCore
+                        </div>
+
+                        <div class="sidebar-menu">
+
+                            <a href="#" class="active">
+                                <i class="fa-solid fa-house"></i>
+                                الرئيسية
+                            </a>
+
+                            <a href="#">
+                                <i class="fa-solid fa-users"></i>
+                                الأعضاء
+                            </a>
+
+                            <a href="#">
+                                <i class="fa-solid fa-id-card"></i>
+                                الاشتراكات
+                            </a>
+
+                            <a href="#">
+                                <i class="fa-solid fa-calendar-check"></i>
+                                الحضور
+                            </a>
+
+                            <a href="#">
+                                <i class="fa-solid fa-wallet"></i>
+                                المدفوعات
+                            </a>
+
+                            <a href="#">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                التقارير
+                            </a>
+
+                        </div>
+
+                        <div class="sidebar-bottom">
+
+                            <a href="#">
+                                <i class="fa-solid fa-gear"></i>
+                                الإعدادات
+                            </a>
+
+                        </div>
+
+                    </aside>
+
+
+                    <!-- Dashboard Main -->
+
+                    <div class="showcase-main">
+
+                        <div class="showcase-topbar">
+
+                            <div>
+                                <span>صباح الخير 👋</span>
+                                <strong>مرحباً بك في GymCore</strong>
+                            </div>
+
+                            <button class="notification-button">
+                                <i class="fa-regular fa-bell"></i>
+                                <span></span>
+                            </button>
+
+                        </div>
+
+
+                        <!-- Stats -->
+
+                        <div class="showcase-stats">
+
+                            <div class="showcase-stat">
+
+                                <div class="showcase-stat-icon blue">
+                                    <i class="fa-solid fa-users"></i>
+                                </div>
+
+                                <div>
+                                    <span>إجمالي الأعضاء</span>
+                                    <strong>1,248</strong>
+                                    <small>
+                                        <i class="fa-solid fa-arrow-up"></i>
+                                        12.5%
+                                    </small>
+                                </div>
+
+                            </div>
+
+
+                            <div class="showcase-stat">
+
+                                <div class="showcase-stat-icon green">
+                                    <i class="fa-solid fa-user-check"></i>
+                                </div>
+
+                                <div>
+                                    <span>حضور اليوم</span>
+                                    <strong>386</strong>
+                                    <small>
+                                        <i class="fa-solid fa-arrow-up"></i>
+                                        8.2%
+                                    </small>
+                                </div>
+
+                            </div>
+
+
+                            <div class="showcase-stat">
+
+                                <div class="showcase-stat-icon purple">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </div>
+
+                                <div>
+                                    <span>إيرادات الشهر</span>
+                                    <strong>84,250 ج</strong>
+                                    <small>
+                                        <i class="fa-solid fa-arrow-up"></i>
+                                        15.4%
+                                    </small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="showcase-grid">
+
+                            <!-- Revenue -->
+
+                            <div class="showcase-card revenue-card">
+
+                                <div class="card-title">
+
+                                    <div>
+                                        <strong>الإيرادات</strong>
+                                        <span>آخر 6 شهور</span>
+                                    </div>
+
+                                    <button>
+                                        هذا العام
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
+
+                                </div>
+
+
+                                <div class="revenue-chart">
+
+                                    <div class="chart-y">
+                                        <span>100K</span>
+                                        <span>75K</span>
+                                        <span>50K</span>
+                                        <span>25K</span>
+                                        <span>0</span>
+                                    </div>
+
+                                    <div class="chart-area">
+
+                                        <div class="area-fill"></div>
+
+                                        <div class="area-line"></div>
+
+                                        <div class="chart-points">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+
+                                        <div class="chart-x">
+                                            <span>يناير</span>
+                                            <span>فبراير</span>
+                                            <span>مارس</span>
+                                            <span>أبريل</span>
+                                            <span>مايو</span>
+                                            <span>يونيو</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Recent Members -->
+
+                            <div class="showcase-card members-card">
+
+                                <div class="card-title">
+
+                                    <div>
+                                        <strong>أحدث الأعضاء</strong>
+                                        <span>آخر المسجلين</span>
+                                    </div>
+
+                                    <a href="#">عرض الكل</a>
+
+                                </div>
+
+
+                                <div class="members-list">
+
+                                    <div class="member">
+
+                                        <div class="member-avatar">
+                                            أ
+                                        </div>
+
+                                        <div class="member-info">
+                                            <strong>أحمد محمد</strong>
+                                            <span>اشتراك شهري</span>
+                                        </div>
+
+                                        <span class="member-status">
+                                            نشط
+                                        </span>
+
+                                    </div>
+
+
+                                    <div class="member">
+
+                                        <div class="member-avatar">
+                                            م
+                                        </div>
+
+                                        <div class="member-info">
+                                            <strong>محمد علي</strong>
+                                            <span>اشتراك 3 شهور</span>
+                                        </div>
+
+                                        <span class="member-status">
+                                            نشط
+                                        </span>
+
+                                    </div>
+
+
+                                    <div class="member">
+
+                                        <div class="member-avatar">
+                                            س
+                                        </div>
+
+                                        <div class="member-info">
+                                            <strong>سارة أحمد</strong>
+                                            <span>اشتراك سنوي</span>
+                                        </div>
+
+                                        <span class="member-status">
+                                            نشط
+                                        </span>
+
+                                    </div>
+
+
+                                    <div class="member">
+
+                                        <div class="member-avatar">
+                                            ع
+                                        </div>
+
+                                        <div class="member-info">
+                                            <strong>عمر خالد</strong>
+                                            <span>اشتراك شهري</span>
+                                        </div>
+
+                                        <span class="member-status warning">
+                                            ينتهي قريباً
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PRICING
+        ========================== -->
+
+        <section class="pricing" id="pricing">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="section-badge">
+                        الأسعار
+                    </span>
+
+                    <h2>
+                        خطط تناسب
+                        <span>حجم جيمك</span>
+                    </h2>
+
+                    <p>
+                        اختار الخطة المناسبة ليك، وابدأ فورًا
+                        بدون أي عقود طويلة أو رسوم مخفية.
+                    </p>
+
+                </div>
+
+
+                <div class="pricing-grid">
+
+                    <!-- Plan 1 -->
+
+                    <div class="pricing-card">
+
+                        <div class="pricing-icon blue">
+                            <i class="fa-solid fa-dumbbell"></i>
+                        </div>
+
+                        <div class="pricing-header">
+                            <h3>أساسي</h3>
+                            <p>مناسبة للجيمات الصغيرة</p>
+                        </div>
+
+                        <div class="pricing-price">
+                            <span class="currency">جنيه</span>
+                            <strong>299</strong>
+                            <span class="period">/ شهريًا</span>
+                        </div>
+
+                        <ul class="pricing-features">
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                حتى 150 عضو
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                إدارة الأعضاء والاشتراكات
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                تسجيل حضور يومي
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                دعم فني عبر البريد
+                            </li>
+
+                        </ul>
+
+                        <a href="#contact" class="secondary-button">
+                            ابدأ الآن
+                        </a>
+
+                    </div>
+
+
+                    <!-- Plan 2 -->
+
+                    <div class="pricing-card popular">
+
+                        <span class="pricing-badge">
+                            <i class="fa-solid fa-star"></i>
+                            الأكثر طلبًا
+                        </span>
+
+                        <div class="pricing-icon white">
+                            <i class="fa-solid fa-crown"></i>
+                        </div>
+
+                        <div class="pricing-header">
+                            <h3>احترافي</h3>
+                            <p>الأنسب لمعظم الجيمات</p>
+                        </div>
+
+                        <div class="pricing-price">
+                            <span class="currency">جنيه</span>
+                            <strong>599</strong>
+                            <span class="period">/ شهريًا</span>
+                        </div>
+
+                        <ul class="pricing-features">
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                أعضاء غير محدودين
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                كل مميزات الخطة الأساسية
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                تقارير وإحصائيات متقدمة
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                إدارة المدفوعات والفواتير
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                دعم فني على مدار الساعة
+                            </li>
+
+                        </ul>
+
+                        <a href="#contact" class="primary-button">
+                            ابدأ الآن
+                        </a>
+
+                    </div>
+
+
+                    <!-- Plan 3 -->
+
+                    <div class="pricing-card">
+
+                        <div class="pricing-icon purple">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+
+                        <div class="pricing-header">
+                            <h3>مؤسسي</h3>
+                            <p>لسلاسل الجيمات وأكتر من فرع</p>
+                        </div>
+
+                        <div class="pricing-price">
+                            <span class="currency">جنيه</span>
+                            <strong>1,199</strong>
+                            <span class="period">/ شهريًا</span>
+                        </div>
+
+                        <ul class="pricing-features">
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                كل مميزات الخطة الاحترافية
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                إدارة عدة فروع من مكان واحد
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                صلاحيات مخصصة للموظفين
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                مدير حساب مخصص لجيمك
+                            </li>
+
+                        </ul>
+
+                        <a href="#contact" class="secondary-button">
+                            تواصل معنا
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CTA
+        ========================== -->
+
+        <section class="cta" id="contact">
+
+            <div class="container">
+
+                <div class="cta-content">
+
+                    <span class="section-badge">
+                        جاهز تبدأ؟
+                    </span>
+
+                    <h2>
+                        خلي إدارة جيمك
+                        <span>أسهل من أي وقت</span>
+                    </h2>
+
+                    <p>
+                        ابدأ باستخدام GymCore وخلي كل تفاصيل جيمك
+                        تحت سيطرتك من لوحة تحكم واحدة.
+                    </p>
+
+                    <a
+                        href="https://wa.me/201037623919"
+                        class="primary-button"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        ابدأ الآن مجاناً
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <div class="footer-logo">
+
+                <div class="logo">
+                    <span class="logo-icon">G</span>
+                    <span>GymCore</span>
+                </div>
+
+                <p>
+                    نظام إدارة الجيم الذكي والمتكامل.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#features">المميزات</a>
+                <a href="#how-it-works">كيف يعمل</a>
+                <a href="#pricing">الأسعار</a>
+                <a href="#contact">تواصل معنا</a>
+
+            </div>
+
+
+            <div class="footer-social">
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 GymCore. جميع الحقوق محفوظة.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
